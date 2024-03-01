@@ -1,132 +1,124 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section.flexcontainer {
-    width: 50%;
-    border: solid darkblue 5px;
-    margin: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  width: 50%;
+  border: solid darkblue 5px;
+  margin: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 div.sqr {
-    height: 100px;
-    width: 200px;
-
-
+  height: 100px;
+  width: 200px;
 }
 
 div.sqr:nth-child(1) {
-    background-color: black;
+  background-color: black;
 }
 
 div.sqr:nth-child(2) {
-    background-color: red;
+  background-color: red;
 }
 
 div.sqr:nth-child(3) {
-    background-color: green;
+  background-color: green;
 }
 
 /*-----cards-------*/
 main.maincontainer {
-    background-color: silver;
-    width: 80%;
-    margin: 10%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  width: 80%;
+  margin: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 section.card {
-    width: 300px;
-    height: 600px;
-    box-shadow: 2px 2px 10px black;
-    border-radius: 5px;
-    margin: 1em;
-
+  width: 300px;
+  height: 600px;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5px;
+  margin: 1em;
 }
 
 img.imgcard {
-    width: 100%;
-    height: 40%;
-    display: block;
+  width: 100%;
+  height: 40%;
+  display: block;
 }
 
 div.cardinfo {
-    background-color: aliceblue;
-    padding: 1em;
-    height: 60%;
+  background-color: aliceblue;
+  padding: 1em;
+  height: 60%;
 }
 
 a.cardlink {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 1em 2em;
-    text-align: center;
-    text-decoration: none;
-    transition: 300ms;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  transition: 300ms;
 }
 
 a.cardlink:hover {
-    background-color: rgb(243, 22, 14);
-    box-shadow: 0px 8px 6px 2px silver;
-    font-size: 1em;
-    transform: scale(1.01);
-
+  background-color: rgb(243, 22, 14);
+  box-shadow: 0px 8px 6px 2px silver;
+  font-size: 1em;
+  transform: scale(1.01);
 }
 
 /*---------BREAKOINT= 1700px------*/
 
-@media only screen and (max-width:1700px) {
-    main.maincontainer {
-        background-color: yellowgreen;
-    }
+@media only screen and (max-width: 1700px) {
+  section.card {
+    width: 500px;
+    margin: 2em;
+  }
 
-    section.card {
-        width: 500px;
-        margin: 2em;
-    }
-
-    img.imgcard {
-        height: 60%;
-    }
-
+  img.imgcard {
+    height: 60%;
+  }
 }
 
 /*-----BREAKPOINT= 1450px-----*/
-@media only screen and (max-width:1450px) {
-    main.maincontaier {
-        background-color: lightseagreen;
-    }
-
-    section.card {
-        width: 700px;
-
-    }
+@media only screen and (max-width: 1450px) {
+  section.card {
+    width: 700px;
+  }
 }
 
 /*-----BREAKPOINT= 600px-----*/
-@media only screen and(max-width:600px) {
-    main.maincontainer {
-        background-color: rgb(121, 22, 36);
-    }
-
-    section.card {
-        width: 100%;
-        height: auto;
-    }
-
-    img.imgcard {
-        height: auto;
-    }
-
-    div.cardinfo {
-        height: auto;
-    }
-
+@media only screen and (max-width: 600px) {
+  section.card {
+    width: 100%;
+    height: auto;
+  }
+  img.imgcard {
+    height: auto;
+  }
+  div.cardinfo {
+    height: auto;
+  }
+}
+/*-----BREAKPOINT= 200px-----*/
+@media only screen and (max-width: 200px) {
+  section.card {
+    width: 100%;
+    height: auto;
+  }
+  img.imgcard {
+    height: auto;
+  }
+  div.cardinfo {
+    height: auto;
+  }
 }
