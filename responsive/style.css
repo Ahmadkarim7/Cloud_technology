@@ -41,8 +41,9 @@ main.maincontainer {
 section.card {
   width: 300px;
   height: 600px;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 2px 2px 6px black;
   border-radius: 5px;
+  overflow: hidden;
   margin: 1em;
 }
 
