@@ -1,68 +1,315 @@
-*{
+* {
   box-sizing: border-box;
 }
-
-div.black{
-  background-color: rgb(0, 0, 0);
+/*---Navigation---*/
+.navigation {
+  background-color: darkorange;
   width: 100%;
-  height: 100px;
-
+  font-size: 2em;
 }
-
+.navigation a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 24.6%;
+}
+.navigation a:hover {
+  background-color: rgb(9, 9, 110);
+}
+/*main body*/
+div.heading {
+  color: white;
+}
 img.topicimg {
   width: 100%;
   height: 700px;
-  
+  filter: sepia(50%);
+  object-fit: cover;
 }
-div.img.bgimg {
+div.topictext {
+  position: absolute;
+  top: 89%;
+  left: 49.9%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  width: 100%;
+  font-size: large;
+  font-weight: 300;
+}
+div.bgimg {
   position: relative;
 }
 
 .message {
   text-align: center;
   font-weight: bolder;
-  color: rgb(103, 103, 7);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
   bottom: 50%;
   position: absolute;
   right: 28%;
-  top: 15%;
+  top: 30%;
   width: 45%;
   font-size: 2em;
-  background-color: rgba(255, 255, 2555, 0.7);
-  border-radius: 10px;
-  
+  border-radius: 20px;
+  padding-bottom: 10px;
 }
-img.pngflag{
+img.pngflag {
   width: 100px;
   height: 100px;
   margin: auto;
-
 }
-.bgimg{
+.bgimg {
   width: 100%;
-  height: 500px;
+  height: 700px;
   border: solid 1px;
   overflow: hidden;
-
+}
+/*------Heading and paragraph work-----*/
+.headings {
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: -0.6em;
+}
+.para {
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 /*----information session----*/
-section.infocontainer{
+section.infocontainer {
   width: 80%;
   margin: 2em auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-div.infoleft, div.inforight{
+div.infoleft,
+div.inforight {
   width: 49%;
   margin-top: 10em;
 }
-img{
+img.filter:hover {
+  filter: grayscale(80%);
+}
+img.filter {
+  border-radius: 20px;
+}
+img {
   width: 100%;
   height: 100%;
   display: block;
 }
-div.inforight{
+div.inforight {
   padding: 1em;
+}
+a.infolink {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: brown;
+  padding: 0.8em 9em;
+  border-radius: 1em;
+  margin-left: 7.5em;
+}
+a.infolink:hover {
+  color: white;
+  background-color: blueviolet;
+  transition: 300ms;
+}
+
+/*-----Footer----*/
+div.lastpart {
+  width: 100%;
+  height: 300px;
+  background-color: darkslategray;
+  position: absolute;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+  float: left;
+}
+
+.logo1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+.footer-content {
+  bottom: 10%;
+  float: left;
+  width: 31%;
+  margin: 1%;
+}
+
+.heading {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+.f12 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+.fa {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+}
+
+/*----Second Page CSS----*/
+.second-page {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.iconimg {
+  width: 50px;
+  height: 50px;
+}
+.back-icon {
+  text-decoration: none;
+  background-color: white;
+  margin-right: 550px;
+  padding: 0.2em;
+  justify-content: center;
+  border-radius: 50%;
+  float: left;
+}
+.second-header {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: white;
+}
+/*-----Card container---*/
+.container {
+  display: flex;
+}
+.card {
+  width: 33%;
+  height: 250px;
+  float: left;
+  margin-top: 50px;
+  padding: 1%;
+}
+.img-bdr {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 33px;
+  box-shadow: 0 4px 12px black;
+}
+
+/*----Sub types----*/
+.sub-definition {
+  padding: 1em;
+  margin: 3em;
+  text-align: start;
+}
+.sub-heading {
+  font-size: 2em;
+  font-weight: 1000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.dfn {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/*-----Sub footer----*/
+.sub-footer {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  height: fit-content;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+/*------hover effects---*/
+.filter :hover {
+  filter: invert(60%);
+}
+/*----animation---*/
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+  transition: transform 2s linear;
+  transform: translateX(0);
+  position: relative;
+  text-decoration: none;
+}
+.box:hover {
+  transform: translateX(200px);
+  text-decoration: none;
+  background-color: cadetblue;
+}
+h1.extra {
+  font-size: 200px;
+  text-align: center;
+  color: blueviolet;
+}
+
+/*-------Closing paragraph-----*/
+.closingh {
+  font-size: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+.closingp {
+  font-size: 1.5em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h3.lasth {
+  font-size: 3em;
+  font-family: monospace;
+  text-align: center;
+}
+h4 {
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+}
+a.list{
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 5px;
+}
+/*---------BREAKOINT= 1700px------*/
+
+@media only screen and (max-width: 1220px) {
+  div.infoleft, div.inforight, nav.navigation, div.bgimg, section.infocontainer {
+    width: 500px;
+    margin: 2em;
+  }
+
+  img.imgcard {
+    height: 60%;
+  }
 }
