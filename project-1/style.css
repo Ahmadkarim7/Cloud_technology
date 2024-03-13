@@ -56,7 +56,26 @@ div.bgimg {
   font-size: 2em;
   border-radius: 20px;
   padding-bottom: 10px;
+  transition: 300ms;
 }
+div.message:hover{
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  background-color: rgba(8, 38, 109, 0.8);
+  bottom: 50%;
+  position: absolute;
+  right: 28%;
+  top: 30%;
+  width: 45%;
+  font-size: 2em;
+  border-radius: 30px;
+  padding-bottom: 10px;
+  transform: scale(1.3);
+  
+}
+
+
 img.pngflag {
   width: 100px;
   height: 100px;
@@ -96,6 +115,9 @@ div.inforight {
 }
 img.filter:hover {
   filter: grayscale(80%);
+  box-shadow: 5px 5px 10px darkgreen;
+  color:burlywood;
+  transform: scale(1.02);
 }
 img.filter {
   border-radius: 20px;
@@ -116,11 +138,17 @@ a.infolink {
   padding: 0.8em 9em;
   border-radius: 1em;
   margin-left: 7.5em;
+  transition: 300ms;
 }
 a.infolink:hover {
+  text-decoration: none;
+  text-align: center;
   color: white;
+  padding: 0.8em 9em;
+  border-radius: 1em;
+  margin-left: 7.5em;
   background-color: blueviolet;
-  transition: 300ms;
+  transform: scale(2);
 }
 
 /*-----Footer----*/
@@ -194,6 +222,17 @@ div.lastpart {
   justify-content: center;
   border-radius: 50%;
   float: left;
+  transition: 300ms;
+}
+.back-icon:hover {
+  text-decoration: none;
+  background-color: rgb(238, 238, 8);
+  margin-right: 550px;
+  padding: 0.2em;
+  justify-content: center;
+  border-radius: 50%;
+  float: left;
+  transform: scale(0.9);
 }
 .second-header {
   font-family: "Times New Roman", Times, serif;
@@ -211,11 +250,20 @@ div.lastpart {
   float: left;
   margin-top: 50px;
   padding: 1%;
+  transition: 300ms;
 }
 .img-bdr {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 33px;
   box-shadow: 0 4px 12px black;
+}
+.card:hover {
+  width: 33%;
+  height: 250px;
+  float: left;
+  margin-top: 50px;
+  padding: 1%;
+  transform: scale(1.1);
 }
 
 /*----Sub types----*/
@@ -301,7 +349,7 @@ a.list{
   text-decoration: none;
   padding: 5px;
 }
-/*---------BREAKOINT= 1700px------*/
+/*---------BREAKOINT= 1220px------*/
 
 @media only screen and (max-width: 1220px) {
   div.infoleft, div.inforight, nav.navigation, div.bgimg, section.infocontainer {
