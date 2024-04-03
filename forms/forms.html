@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="bg-info p-3 text-center">Forms by Ahmad Adil Karim</h1>
+    <form action="thankyou.html" method="post" class="mt-5 mx-auto" style="width: 700px;">
+    <legend class="bg-warning p-2 text-center rounded mb-5">
+      <p>Input Control</p>
+    </legend>
+    <div class="mb-5">
+      <label for="emailInput" class="form-label"></label>
+      <input type="email" id="emailInput" placeholder="name@example.com..." class="form-control">
+      <label for="inputpassword">Password</label>
+      <input type="password" id="inputpassword" class="form-control" aria-describedby="passwordHelpBlock">
+      <div class="form-text" id="passwordHelpBlock">
+        <p>Your password must be 8 to 20 characters long</p>
+      </div>
+    </div>
+
+    <div class="mb-5">
+<label for="colorInput" class="form-label">pick a color</label>
+<input type="color" id="colorInput" class="form-control form-control-color" value="#AA55BB" title="choose your color">
+    </div>
+    <!----Data list-->
+    <div class="mb-5">
+      <label for="datalist">Datalist Example</label>
+      <input class="form-control" list="datalistoptions" placeholder="Type to search..." id="datalist">
+      <datalist id="datalistoptions">
+        <option value="San Francisco"></option>
+        <option value="New York "></option>
+        <option value="Seatle "></option>
+        <option value="Los Angeles"></option>
+        <option value="Chicago"></option>
+      </datalist>  
+      </div>
+
+      <!----Check Box-->
+      <div class="mb-5">
+        <p>Which day you don't want to go to school?</p>
+        <div class="form-check">
+          <label for="chechDefault" class="form-check-label">Monday</label>
+          <input type="checkbox" id="chechDefault" class="form-check-input">
+        </div>
+        <div class="form-check">
+          <label for="chechTuesday" class="form-check-label">Tuesday</label>
+          <input type="checkbox" id="chechTuesday" class="form-check-input">
+        </div>
+        <div class="form-check">
+          <label for="chechWed" class="form-check-label">Wednesday</label>
+          <input type="checkbox" id="chechWed" class="form-check-input">
+        </div>
+        <div class="form-check">
+          <label for="chechThursday" class="form-check-label">Thurday</label>
+          <input type="checkbox" id="chechThursday" class="form-check-input" checked>
+        </div>
+        <div class="form-check">
+          <label for="chechFriday" class="form-check-label">Friday</label>
+          <input type="checkbox" id="chechFriday" class="form-check-input" checked>
+        </div>
+      </div>
+    
+    <!--Radio-->
+      <div class="mb-5">
+        <p>Gender:</p>
+        <div class="form-check">
+          <label for="form-check-label" for="genderFemale">Female</label>
+          <Input type="radio" class="form-check-input" id="genderFemale"></Input>
+        </div>
+        <div class="form-check">
+          <label for="form-check-label" for="genderMale">Male</label>
+          <Input type="radio" class="form-check-input" id="genderMale"></Input>
+        </div>
+        <div class="form-check">
+          <label for="form-check-label" for="genderOther">Other</label>
+          <Input type="radio" class="form-check-input" id="genderOther"></Input>
+        </div>
+      </div>
+       <!---Switch using the CheckBox-->
+      <div class="mb-5">
+        <div class="form-check form-switch">
+          <label for="switchcheck">Default switch checkbox</label>
+          <input type="checkbox" id="switchcheck" role="switch" class="form-check-input">
+        </div>
+
+        <div class="form-check form-switch">
+          <label for="switchchecked">Checked switch</label>
+          <input type="checkbox" id="switchchecked" role="switch" class="form-check-input" checked>
+        </div>
+
+        
+        <div class="form-check form-switch">
+          <label for="switchdisabled">Checked switch</label>
+          <input type="checkbox" id="switchdisabled" role="switch" class="form-check-input" disabled>
+        </div>
+
+        <div class="form-check form-switch">
+          <label for="switchCheckeddisabled">Checked switch</label>
+          <input type="checkbox" id="switchCheckeddisabled" role="switch" class="form-check-input" disabled checked>
+        </div>
+      </div>
+
+
+      <!--date-->
+      <div class="mb-5">
+        <label for="appointment" class="form-label">appointment date:</label>
+        <input type="data" id="appointment" class="form-input">
+      </div>
+
+
+      <!---SELECT-->
+      <legend class="bg-warning p-2 text-center rounded mb-5">
+        <p>Input Control</p>
+      </legend>
+
+      <div class="mb-5">
+        <select  class="form-select">
+          <p>Quantity</p>
+          <option value="0">Zero</option>
+          <option value="1">One</option>
+          <option value="2" selected>Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="mb-5">
+        <p>Which is your favorite food?</p>
+        <select class="form-select" multiple size="3">
+          <option value="pizza">Pizza</option>
+          <option value="chicken">fried chicken</option>
+          <option value="sandwich">Sandwich</option>
+          <option value="pasta">Pasta</option>
+          <option value="salad">Salad</option>
+        </select>
+      </div>
+
+
+      <!--- TEXTAREA-->
+      <div class="mb-5">
+        <legend class="bg-warning p-3 rounded text-center">textarea</legend>
+        <label for="commentsArea">Suggestions?</label>
+        <textarea class="form-control" placeholder="comments..." maxlength="200" cols="30" rows="10">
+    </textarea>
+    <p class="form-text"> Max. 200 characters</p>
+      </div>
+      
+      <!----  BUTTON-->
+      <button type="submit" class="btn btn-danger mb-5">SUBMIT FORM</button>
+        </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
