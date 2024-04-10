@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primarycolor: rgb(40, 50, 120);
+    --primarydark: rgb(115, 220, 225);
+    --primarylight: rgb(170, 225, 255);
+}
+
+h1{
+    background-color: var(--primarylight);
+    text-align: center;
+    padding: 1em;
+    color: var(--primarycolor);
+}
+img{
+    width: 100%;
+    height: 800px;
+}
+.pst{
+    position: absolute;
+}
+.pst1{
+    position: relative;
+    margin-bottom: 10em;
+}
