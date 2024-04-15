@@ -16,14 +16,32 @@ h1{
     padding: 1em;
     color: var(--primarycolor);
 }
-img{
+.sub-heading{
+    color: var(--primarycolor) ;
+}
+
+.bgimg{
     width: 100%;
-    height: 800px;
+    
 }
-.pst{
-    position: absolute;
-}
-.pst1{
+.b-wall{
     position: relative;
-    margin-bottom: 10em;
+}
+.bi{
+    position: absolute;
+    
+}
+.bt{
+position: absolute; 
+top: 8em;
+left: 33em;
+
+}
+.cardds{
+    position: absolute;
+    top: 110em;
+}
+.card2{
+    position: absolute;
+    top: 160em;
 }
