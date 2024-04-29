@@ -93,7 +93,7 @@ box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
 transition: 0.5s;
 }
 .apple{
-    background:  url(pictures/pexels-max-vakhtbovycn-7533838.jpg) no-repeat;
+    background:  url(pictures/aks\ \(2\).jpg) no-repeat;
     background-size: cover;
     height: 80vh;
     width: 100%;
@@ -129,4 +129,44 @@ transition: 0.5s;
 }
 .news p{
     margin: 0;
+}
+.fab, .fas{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+    text-decoration: none;
+    color: white;
+}
+ .fas:hover{
+    color: rgb(170, 225, 255);
+}
+.fab:hover{
+    color: rgb(170, 225, 255);
+}
+.ta{
+    text-decoration: none;
+    color: white;
+
+}
+.ta:hover{
+    color: rgb(170, 225, 255);
+
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.interior{
+    height: 280px;
+}
+.body-img{
+    height: 200px;
+}
+.i-p:hover{
+    -webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+    transition: 0.5s;
+    
+
 }

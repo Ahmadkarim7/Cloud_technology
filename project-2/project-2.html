@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
   <body>
 
@@ -21,21 +22,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="#10">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">TRENDING</a>
+                <a class="nav-link" href="#11">TRENDING</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#">
-                  CITIES
+                <a class="nav-link" href="#12">
+                  INTERIOR
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">PRICING</a>
+                <a class="nav-link" href="#13" aria-disabled="true">PRICING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-disabled="true">CONTACT</a>
+                <a class="nav-link " href="#15" aria-disabled="true">CONTACT</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -49,8 +50,8 @@
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-lg-7 pt-5 text-center">
-                        <h1 class="pt-4">Find a Better Place for Living</h1>
-                        <button class="btn1 mt-3">More Tips</button>
+                        <h1 id="10" class="pt-4">Find a Better Place for Living</h1>
+                        <a href="#a2"><button class="btn1 mt-3">More Tips</button></a>
                     </div>
                 </div>
             </div>
@@ -65,17 +66,19 @@
                     <div class="col-lg-7 m-auto">
                         <div class="row text-center">
                             <div class="col-lg-4">
-                                <img src="pictures/png-1.png" class="img-luid">
+                               <a class="link" href="https://www.zillow.com/"> <img src="pictures/png-1.png" class="img-luid">
                                 <h6>RENT</h6>
+                            </a>
                             </div>
                             <div class="col-lg-4">
-                                <img src="pictures/png-2.png" class="img-luid">
-                                <h6>SELL</h6>
+                               
+                               <a class="link" href="https://www.zillow.com/"> <img src="pictures/png-2.png" class="img-luid">
+                                <h6>SELL</h6></a>
 
                             </div>
                             <div class="col-lg-4">
-                                <img src="./pictures/png-3.png" class="img-luid">
-                                <h6>MANAGE</h6>
+                               <a class="link" href="https://www.zillow.com/"> <img src="./pictures/png-3.png" class="img-luid">
+                                <h6>MANAGE</h6></a>
 
                             </div>
                         </div>
@@ -92,13 +95,13 @@
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-lg-5 m-auto text-center">
-                        <h1 style="color: rgb(40, 50, 120);">What's Trending</h1>
+                        <h1 id="11" style="color: rgb(40, 50, 120);">What's Trending</h1>
                         <h6 style="color: rgb(115, 220, 225);;">Choose your favourite</h6>
                     </div>
                 </div>
                 <!--ITEM 1-->
-                <div class="row">
-                    <div class="col-lg-3 text-center">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
                                 <img  src="pictures/pic (1).jpg" class="img-fluid" alt="">
@@ -106,188 +109,639 @@
                         </div>
                         <h6>Sunset Serenity</h6>
                         <p>$150,000</p>
+                        <p>3 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            More Details
+                        </button>
                     </div>
                     <!---Item 2-->
-                    <div class="col-lg-3 text-center">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
                                 <img  src="pictures/pic (2).jpg" class="img-fluid" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Tranquil Haven Homes</h6>
+                        <p>$300,000</p>
+                        <p>4 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            More Details
+                        </button>
                     </div>
                     <!--Item 3-->
-                    <div class="col-lg-3 text-center">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
                                 <img  src="pictures/pic-5.jpg" class="img-fluid" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Urban Oasis Residences</h6>
+                        <p>$400,000</p>
+                        <p>5 Bed 3 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            More Details
+                        </button>
                     </div>
                     <!--- Item 4-->
-                    <div class="col-lg-3 text-center">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
                                 <img  src="pictures/pic (4).jpg" class="img-fluid" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Serene Sanctuary Villas</h6>
+                        <p>$500,000</p>
+                        <p>6 Bed 3 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                            More Details
+                        </button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 text-center m-auto">
-                        <button class="btn1 mt-5">Click for More</button>
+                       <a href="#a1"><button class="btn1 mt-5">Click for More</button></a> 
                     </div>
                 </div>
             </div>
         </section>
 
+
+<!----Modal windows-->
+
+<!--Item*1-->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Sunset Serenity Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="pictures/pic (1).jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Price: $150,000</p>
+                        <p>Bedrooms: 3</p>
+                        <p>Bathrooms: 2</p>
+                        <p>Days to Complete: 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Item*2-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Tranquil Haven Homes Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="pictures/pic (2).jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Price: $300,000</p>
+                        <p>Bedrooms: 4</p>
+                        <p>Bathrooms: 2</p>
+                        <p>Days to Complete: 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---Item*3-->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel3">Urban Oasis Residences Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="pictures/pic-5.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Price: $400,000</p>
+                        <p>Bedrooms: 5</p>
+                        <p>Bathrooms: 3</p>
+                        <p>Days to Complete: 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Item*4-->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel4">Serene Sanctuary Villas Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="pictures/pic (4).jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Price: $500,000</p>
+                        <p>Bedrooms: 6</p>
+                        <p>Bathrooms: 3</p>
+                        <p>Days to Complete: 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
         <!---About-->
 
         <section class="about">
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-lg-8 m-auto text-center">
-                        <h1>Welcome to Your Home Search Headquarters</h1>
-                        <h6 style="color: rgb(115, 220, 225);;">Choose your favourite</h6>
+                        <h1 id="12" style="color: rgb(40, 50, 120);">Discover Your Signature Style</h1>
+                        <h6 style="color: rgb(115, 220, 225);;">Explore Our Interior Designs</h6>
                     </div>
                 </div>
                     <div class="row">
                         <div class="col-lg-4">
-                            <img src="pictures/pic-6.jpg" class="img-fluid mb-3">
-                            <h5>Best Interoir Design for your home</h5>
-                            <p>Bla huadg jagsdaodyg Sdaisdgfavyu BJdgasdoif Sdgfasdau hjadvfadaiyv jdadfuaoyfusdfaydadgfasdyadosyvdu</p>
+                           <a href="https://www.zillow.com/" target="_blank" rel="noopener noreferrer"> <img src="pictures/interior (2).jpg" class="img-fluid interior i-p mb-3"></a>
+                            <h5>Luxurious Interior Designs</h5>
+                            <p>Experience luxury like never before with our stunning interior designs. Our homes are crafted with meticulous attention to detail, offering a blend of elegance and comfort. Step into a world of refined taste and sophistication that's sure to impress.</p>
                         </div>
                         <div class="col-lg-4">
-                            <img src="pictures/pic-6.jpg" class="img-fluid mb-3">
-                            <h5>Best Interoir Design for your home</h5>
-                            <p>Bla huadg jagsdaodyg Sdaisdgfavyu BJdgasdoif Sdgfasdau hjadvfadaiyv jdadfuaoyfusdfaydadgfasdyadosyvdu</p>
+                           <a href="https://www.zillow.com/" target="_blank" rel="noopener noreferrer"><img src="pictures/interior (1).jpg" class="img-fluid mb-3 i-p interior"></a>
+                            <h5>Tailored Elegance</h5>
+                            <p>Discover personalized design that suits your style perfectly. Our team works closely with you to create a space that reflects your personality and preferences. Whether you prefer modern or classic, we ensure every detail is just right for you.</p>
                         </div>
                         <div class="col-lg-4">
-                            <img src="pictures/pic-6.jpg" class="img-fluid mb-3">
-                            <h5>Best Interoir Design for your home</h5>
-                            <p>Bla huadg jagsdaodyg Sdaisdgfavyu BJdgasdoif Sdgfasdau hjadvfadaiyv jdadfuaoyfusdfaydadgfasdyadosyvdu</p>
+                            <a href="https://www.zillow.com/" target="_blank" rel="noopener noreferrer"><img src="pictures/pic-6.jpg" class="img-fluid interior i-p mb-3"></a>
+                            <h5>Unparalleled Comfort</h5>
+                            <p>Relax in style with our thoughtfully designed interiors. From cozy furnishings to soothing colors, our homes provide the perfect retreat from the outside world. Enjoy comfort and tranquility in every corner of your new home.</p>
                         </div>
                 </div>
 
                 <div class="row pt-3">
                     <div class="col-lg-6 text-center m-auto">
-                        <button class="btn1 mt-5">Shope More</button>
+                       <a href="https://www.zillow.com/" target="_blank" rel="noopener noreferrer"> <button class="btn1 mt-5">Shope More</button></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Next Part-->
 
+        
+
+        <!--Next Part-->
         <section class="shop">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-lg-8 m-auto text-center">
-                        <h1>Welcome to Your Home Search Headquarters</h1>
-                        <h6 style="color: rgb(115, 220, 225);;">Choose your favourite</h6>
+                        <h1 id="13" style="color: rgb(40, 50, 120);">Welcome to Your Home Search Headquarters</h1>
+                        <h6 id="a1" style="color: rgb(115, 220, 225);;">Choose your favourite</h6>
                     </div>
                 </div>
                  <!--ITEM 1-->
-                 <div class="row">
-                    <div class="col-lg-3 text-center">
+                 <div class="row  row-cols-1 row-cols-md-2 row-cols-lg-4 g-3" >
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic (1).jpg" class="img-fluid" alt="">
+                                <img  src="pictures/pics (1).jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Cozy Cottage Homes</h6>
+                        <p>$100,000</p>
+                        <p>2 Bed 1 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                            More Details
+                        </button>
                     </div>
                     <!---Item 2-->
-                    <div class="col-lg-3 text-center">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic (2).jpg" class="img-fluid" alt="">
+                                <img  src="pictures/pics (2).jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Peaceful Retreat Villas</h6>
+                        <p>$130,000</p>
+                        <p>2 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                            More Details
+                        </button>
                     </div>
                     <!--Item 3-->
-                    <div class="col-lg-3 text-center">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic-5.jpg" class="img-fluid" alt="">
+                                <img  src="pictures/breno-assis-r3WAWU5Fi5Q-unsplash.jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
+                        <h6>City Loft Apartments</h6>
                         <p>$150,000</p>
+                        <p>3 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                            More Details
+                        </button>
+                    
                     </div>
                     <!--- Item 4-->
-                    <div class="col-lg-3 text-center">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic (4).jpg" class="img-fluid" alt="">
+                                <img  src="pictures/pics (4).jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
+                        <h6>Modern Mansion Estates</h6>
                         <p>$150,000</p>
+                        <p>3 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                            More Details
+                        </button>
                     </div>
                 </div>
-                 <!--ITEM 1-->
-                 <div class="row">
-                    <div class="col-lg-3 text-center">
+                 <!--ITEM 5-->
+                 <div class="row my-5  row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic (1).jpg" class="img-fluid" alt="">
+                                <img  src="pictures/pics (5).jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
+                        <h6>Glen Cove</h6>
                         <p>$150,000</p>
+                        <p>4 Bed 4 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                            More Details
+                        </button>
+                    
                     </div>
-                    <!---Item 2-->
-                    <div class="col-lg-3 text-center">
+                    <!---Item 6-->
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic (2).jpg" class="img-fluid" alt="">
+                                <img  src="pictures/pics (6).jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Sunset Houses</h6>
+                        <p>$250,000</p>
+                        <p>3 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                            More Details
+                        </button>
                     </div>
-                    <!--Item 3-->
-                    <div class="col-lg-3 text-center">
+                    <!--Item 7-->
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic-5.jpg" class="img-fluid" alt="">
+                                <img  src="pictures/pics (7).jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Mini Houses</h6>
+                        <p>$350,000</p>
+                        <p>3 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                            More Details
+                        </button>
                     </div>
-                    <!--- Item 4-->
-                    <div class="col-lg-3 text-center">
+                    <!--- Item 8-->
+                    <div class="col text-center">
                         <div class="card border-0 bg-light mb-2">
                             <div class="card-body">
-                                <img  src="pictures/pic (4).jpg" class="img-fluid" alt="">
+                                <img  src="pictures/pics (8).jpg" class="img-fluid body-img" alt="">
                             </div>
                         </div>
-                        <h6>Sunset Serenity</h6>
-                        <p>$150,000</p>
+                        <h6>Forest House</h6>
+                        <p>$1,000,000</p>
+                        <p>3 Bed 2 Bathrooms</p>
+                        <p class="text-danger small">Only 10 days are remainig</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                            More Details
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!---MOdal windows 2-->
+
+
+        <!---Modal*5-->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel5">Cozy Cottage Homes Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (1).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $100,000</p>
+                                <p>Bedrooms: 2</p>
+                                <p>Bathrooms: 1</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Modal*6-->
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel6">Peaceful Retreat Villas Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (2).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $130,000</p>
+                                <p>Bedrooms: 2</p>
+                                <p>Bathrooms: 2</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Moda*7-->
+        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel7">City Loft Apartments Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/breno-assis-r3WAWU5Fi5Q-unsplash.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $150,000</p>
+                                <p>Bedrooms: 3</p>
+                                <p>Bathrooms: 2</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal*8-->
+        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel8">Modern Mansion Estates Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (4).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $150,000</p>
+                                <p>Bedrooms: 3</p>
+                                <p>Bathrooms: 2</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----Modal*9-->
+        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel9">Glen Cove Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (5).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $150,000</p>
+                                <p>Bedrooms: 4</p>
+                                <p>Bathrooms: 4</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal*10-->
+        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel9">Glen Cove Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (5).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $150,000</p>
+                                <p>Bedrooms: 4</p>
+                                <p>Bathrooms: 4</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Modal*11-->
+        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel10">Sunset Houses Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (6).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $250,000</p>
+                                <p>Bedrooms: 3</p>
+                                <p>Bathrooms: 2</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----Modal*12-->
+        <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel11">Mini Houses Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (7).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $350,000</p>
+                                <p>Bedrooms: 3</p>
+                                <p>Bathrooms: 2</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----Modal*13-->
+        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel12">Forest House Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="pictures/pics (8).jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Price: $1,000,000</p>
+                                <p>Bedrooms: 3</p>
+                                <p>Bathrooms: 2</p>
+                                <p>Days to Complete: 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--Image in the body-->
 
-        <section class="apple py-5">
+        <section id="a2" class="apple mt-5 py-5">
             <div class="container text-white py-5">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h1 class="font-weight-bold py-3">The baclground image we will talk about it in a bit</h1>
-                        <h6>Choose your favourite</h6>
-                        <button class="btn1 mt-3">More from us</button>
+                        <h1 class="font-weight-bold py-3">Interior Design Tips</h1>
+                        <h6 style="font-weight: bold;">Interior Design Tips</h6>
+                        <p>Transform your living space into a haven of style and comfort with our comprehensive interior design tips. From color palettes to furniture arrangement, lighting design to storage solutions, we've gathered expert advice to help you achieve your design goals.</p> 
+<p>Whether you're embarking on a full-scale home renovation or simply looking to refresh your decor, our curated collection of tips and techniques offers inspiration for every room and every style. Explore our tips below and start creating the home of your dreams today!</p>
+                     <a href="https://www.zillow.com/" target="_blank" rel="noopener noreferrer"> <button class="btn1 mt-3">Discover More</button></a>  
                     </div>
                 </div>
             </div>
@@ -296,14 +750,14 @@
         <!--Contact-->
             <section class="contact py-5">
                 <div class="container py-5">
-                    <div class="row">
+                    <div class="row py-5">
                         <div class="col-lg-5 m-auto text-center">
-                            <h1>Contact Us</h1>
+                            <h1 id="15" style="color: rgb(40, 50, 120);">Contact Us</h1>
                             <h6 style="color: rgb(115, 220, 225);;">Choose your favourite</h6>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-9 m-auto">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <h6>LOCATION</h6>
@@ -351,24 +805,38 @@
                     <div class="row">
                         <div class="col-lg-11">
                                 <div class="row">
-                                    <div class="col-lg-3">
-                                        <h5>CUSTOMER CARE</h5>
-                                        <p>Regular</p>
-                                        <p>On Time</p>
+                                    <div class="col-lg-3 py-3">
+                                        <h5 class="pb-3 ta">CUSTOMER CARE</h5>
+                                        <a class="ta" href="https://www.qcc.cuny.edu/"><p>Regular</p></a>
+                                        <a class="ta" href="https://www.qcc.cuny.edu/">  <p>On Time</p></a>
+                                            <a class="ta" href="https://www.qcc.cuny.edu/"><p>Always Care</p></a>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <h5>CUSTOMER CARE</h5>
-                                        <p>Regular</p>
-                                        <p>On Time</p>
+                                    <div class="col-lg-3 py-3">
+                                        <h5 class="pb-3 ta">FAQ's</h5>
+                                        <a class="ta" href="https://www.qcc.cuny.edu/"> <p>No Advance required</p></a>
+                                            <a class="ta" href="https://www.qcc.cuny.edu/"> <p>Online shopping</p></a>
+                                                <a class="ta" href="https://www.qcc.cuny.edu/"> <p>Always care</p></a>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <h5>CUSTOMER CARE</h5>
-                                        <p>Regular</p>
-                                        <p>On Time</p>
+                                    <div class="col-lg-3 py-3">
+                                        <h5 class="pb-3 ta">OUR COMPANY</h5>
+                                        <a class="ta" class="ta" href="https://www.qcc.cuny.edu/"><p>About</p></a>
+                                        <a class="ta" href="https://www.qcc.cuny.edu/"> <p>New Homes</p></a>
+                                            <a class="ta" href="https://www.qcc.cuny.edu/"> <p>500+ Happy Customers</p></a>
+                                    </div>
+                                    <div class="col-lg-3 py-3">
+                                        <h5 class="pb-3 ta">CUSTOMER CARE</h5>
+                                      <a href="https://www.facebook.com/QueensboroughCUNY"> <span><i class="fab fa-facebook"></i></span>
+                                    </a> 
+                                        <a href="https://www.instagram.com/queensboroughcc_cuny/"><span><i class="fab fa-instagram"></i></span></a>
+                                        <a href="https://twitter.com/"><span><i class="fas fa-times"></i></span></a>
+                                        <a href="https://www.tiktok.com/@qcc_cuny"><span><i class="fab fa-tiktok"></i></span></a>
+                                        <a href="https://www.youtube.com/user/CUNYQueensborough"><span><i class="fab fa-youtube"></i></span></a>
                                     </div>
                                 </div>
                         </div>
                     </div>
+                    <hr>
+                    <p class="text-center">Project-2 - Sales Website - Designed by @ Ahmad Adil Karim in 2024, for educational puposes.</p>
                 </div>
             </section>
 
