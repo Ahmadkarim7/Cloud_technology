@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primarycolor:rgb(207,148,55);
+    --primarydark:rgb(155, 102, 17);
+    --primarylight:rgb(255,182,62);
+}
+.navbar{
+    background-color: white;
+}
+.nav-link{
+    color: var(--primarydark);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: var(--primarylight);
+    background-color: black;
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primarydark);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main{
+    background-image: url(pictures/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: var(--primarylight);
+    text-align: center;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--primarydark);
+    width: 40%;
+    text-align: center;
+}
+.navbar-nav .nav-link {
+    font-size: 18px; 
+}
