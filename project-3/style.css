@@ -313,3 +313,28 @@ footer{
     background-color: var(--primarydark);
     color: antiquewhite;
 }
+.new-link{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 768px) {
+    .col-md-6 .item img {
+      margin-top: 50px; 
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 576px) {
+    .col-md-6 .item img,
+    .col-sm-8 .item img {
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+    }
+  }
+  @media (min-width: 992px) {
+    .col-md-6 .item img,
+    .col-sm-8 .item img,
+    .col-lg-3 .item img {
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+    }
+  }
